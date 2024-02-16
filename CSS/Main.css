@@ -71,11 +71,11 @@ body {
 
 @media only screen and (max-width: 600px) {
     .toggle_btn {
-        display: block; 
+        display: block;
     }
 
     .dropdown_menu.open {
-        display: block; 
+        display: block;
     }
 }
 
@@ -245,7 +245,7 @@ header {
 }
 
 .lrn h1 {
-    font-size: 3rem;
+    /* font-size: 3rem; */
 }
 
 .lrn p {
@@ -313,12 +313,17 @@ footer {
 @media (max-width:790px) {
 
     /* Who we are page css  */
-    .wwa_img_row{
+    .wwa_img_row {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
     }
+
+    .wwa {
+        padding: 10px 0 90px;
+    }
+
     .wwa_img_row img {
         width: 100px;
     }
