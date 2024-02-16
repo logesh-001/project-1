@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.chumma {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+html {
+    color: black;
+}
+
+body {
+    height: 100vh;
+    background: #000;
+    font-family: 'poppins';
+}
+
+.links li {
+    list-style: none;
+}
+
+.links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.dropdown_menu li {
+    list-style: none;
+    padding: 1rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu li a {
+    text-decoration: none;
+    color: red;
+    font-size: 1rem;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 1rem;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    /* gap: 15px; */
+    padding: 20px 0;
+}
+
+.dropdown_menu.open {
+    height: 240px;
+
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+    background: #8677d1;
+}
+
+.navBar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.links {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/* Landing page Css  */
+
+#main {
+    background: #8677d1;
+
+}
+
+.land {
+
+    background: #8677d1;
+    height: 100vh;
+}
+
+.land-lf {
+    color: white;
+}
+
+.land-lf h2 {
+    font-size: 50px;
+}
+
+.land-lf p {
+    font-size: 20px;
+}
+
+.land-lf button {
+    padding: 15px 50px;
+    background: #fff;
+    border-radius: 50px;
+    color: #7B6CC9;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 40px 0;
+    border: none;
+}
+
+.growing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #A398E0;
+    border-radius: 20px;
+    height: 178px;
+}
+
+.grow_head {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    gap: 20px;
+}
+
+.sec div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rt_main_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Who We Are Page Css  */
+.wwa {
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    margin: 0 100px;
+    padding: 50px 100px;
+}
+
+#wwa {
+    height: 100vh;
+    background: #F5F2FD;
+}
+
+.wwa_img_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    gap: 50px;
+}
+
+@media (max-width:992px) {
+    .links {
+        display: none;
+    }
+
+    .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: none;
+    }
+
+    /* Landing page css  */
+
+
+    .rt_main_img {
+        margin: 40px 0;
+    }
+
+    .land-lf h2 {
+        font-size: 36px;
+    }
+
+    .land-lf p {
+        font-size: 16px;
+    }
+
+    .land-lf button {
+        margin: 20px 0;
+        padding: 10px 40px;
+    }
+
+    .sec div h3 {
+        font-size: 20px;
+    }
+
+    .sec div h5 {
+        font-size: 16px;
+    }
+
+
+}
+
+@media (max-width:790px) {
+
+    /* Who we are page css  */
+    .wwa_img_row img {
+        width: 100px;
+    }
+}
+
+@media (max-width:576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+
+    .rt_main_img img {
+        width: 300px;
+    }
+
+    /* Who we are  */
+    .wwa_img_row {
+        gap: 10px;
+    }
+
+}
