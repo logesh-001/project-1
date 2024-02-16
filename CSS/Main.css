@@ -44,7 +44,7 @@ body {
 
 .dropdown_menu li a {
     text-decoration: none;
-    color: red;
+    color: #8677d1;
     font-size: 1rem;
 }
 
@@ -55,8 +55,9 @@ body {
     right: 1rem;
     height: 0;
     width: 300px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
+    background: white;
+    box-shadow: 2px 4px 6px grey;
+    /* backdrop-filter: blur(15px); */
     border-radius: 10px;
     overflow: hidden;
     /* gap: 15px; */
@@ -64,8 +65,18 @@ body {
 }
 
 .dropdown_menu.open {
-    height: 240px;
+    height: 200px;
+    display: block;
+}
 
+@media only screen and (max-width: 600px) {
+    .toggle_btn {
+        display: block; 
+    }
+
+    .dropdown_menu.open {
+        display: block; 
+    }
 }
 
 header {
