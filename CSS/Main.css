@@ -126,11 +126,11 @@ header {
 }
 
 .land-lf h2 {
-    font-size: 50px;
+    font-size: 3rem;
 }
 
 .land-lf p {
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 .land-lf button {
@@ -138,7 +138,7 @@ header {
     background: #fff;
     border-radius: 50px;
     color: #7B6CC9;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: bold;
     margin: 40px 0;
     border: none;
@@ -212,6 +212,49 @@ header {
     gap: 50px;
 }
 
+/* Learning page  */
+#learn {
+    background: #DFDCEF;
+}
+
+.lrn {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 40px;
+    padding: 100px;
+    background: #DFDCEF;
+}
+
+.lrn h1,
+.lrn p {
+    text-align: center;
+}
+
+.lrn h1 {
+    font-size: 3rem;
+}
+
+.lrn p {
+    font-size: 1.2rem;
+}
+
+/* Foote CSS  */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 0;
+    background: #8677d1;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 100vw;
+}
+
 @media (max-width:992px) {
     .links {
         display: none;
@@ -233,11 +276,11 @@ header {
     }
 
     .land-lf h2 {
-        font-size: 36px;
+        font-size: 2.2rem;
     }
 
     .land-lf p {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .land-lf button {
@@ -246,11 +289,11 @@ header {
     }
 
     .sec div h3 {
-        font-size: 20px;
+        font-size: 1.3rem;
     }
 
     .sec div h5 {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
 
@@ -259,12 +302,35 @@ header {
 @media (max-width:790px) {
 
     /* Who we are page css  */
+    .wwa_img_row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
     .wwa_img_row img {
         width: 100px;
+    }
+
+    .rt_main_img img {
+        width: 300px;
+    }
+
+    .lrn {
+        padding-top: 40px;
+    }
+
+    footer {
+        font-size: .8rem;
+        padding: 20px 0;
     }
 }
 
 @media (max-width:576px) {
+    html {
+        font-size: 14px;
+    }
+
     .dropdown_menu {
         left: 2rem;
         width: unset;
